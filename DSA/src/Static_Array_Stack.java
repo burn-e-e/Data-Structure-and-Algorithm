@@ -1,12 +1,12 @@
-public class Stack {
+public class Static_Array_Stack {
     Character[] data;
     int top;
-    Stack(int size){
+    Static_Array_Stack(int size){
         data = new Character[size];
         top=-1;
     }
     public static void main(String[] args) {
-        Stack a = new Stack(4);
+        Static_Array_Stack a = new Static_Array_Stack(4);
         System.out.println(a.isValid("[}()"));
 
     }
@@ -24,7 +24,7 @@ public class Stack {
         return top ==-1;
     }
     public boolean isValid(String s){
-        Stack a = new Stack(s.length());
+        Static_Array_Stack a = new Static_Array_Stack(s.length());
         for (char c : s.toCharArray()){
             if (c=='('||c=='['||c=='{'){
                 a.push(c);
