@@ -9,7 +9,7 @@ public class Static_Array_Stack {
         Static_Array_Stack a = new Static_Array_Stack(4);
         System.out.println(a.isValid("[}()"));
 
-    }
+    }   
 
     public void push(Character a){
         data[++top] = a;
