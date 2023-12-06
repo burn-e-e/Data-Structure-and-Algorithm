@@ -1,12 +1,12 @@
-public class Static_Array_Stack {
+public class Static_Array_Stack_Leet_code {
     Character[] data;
     int top;
-    Static_Array_Stack(int size){
+    Static_Array_Stack_Leet_code(int size){
         data = new Character[size];
         top=-1;
     }
     public static void main(String[] args) {
-        Static_Array_Stack a = new Static_Array_Stack(4);
+        Static_Array_Stack_Leet_code a = new Static_Array_Stack_Leet_code(4);
         System.out.println(a.isValid("[}()"));
 
     }   
@@ -24,7 +24,7 @@ public class Static_Array_Stack {
         return top ==-1;
     }
     public boolean isValid(String s){
-        Static_Array_Stack a = new Static_Array_Stack(s.length());
+        Static_Array_Stack_Leet_code a = new Static_Array_Stack_Leet_code(s.length());
         for (char c : s.toCharArray()){
             if (c=='('||c=='['||c=='{'){
                 a.push(c);
