@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5358c839-b75b-4f11-801f-38500d2d4d2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lab_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reverse_Linked_List.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Linked_List_Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Linked_List_Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -68,7 +68,7 @@
       <workItem from="1701585211108" duration="9227000" />
       <workItem from="1701662025760" duration="143000" />
       <workItem from="1701818411490" duration="779000" />
-      <workItem from="1701828002640" duration="8123000" />
+      <workItem from="1701828002640" duration="10045000" />
     </task>
     <servers />
   </component>
