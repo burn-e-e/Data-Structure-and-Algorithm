@@ -55,8 +55,7 @@ public class Lab_3 {
         b.push(11);
         b.push(9);
         b.push(3);
-        b.splitStack();
-
+        b.combineStack(c);
 
     }
     public void printStack(){

@@ -7,7 +7,7 @@ public class Static_Array_Stack_Leet_code {
     }
     public static void main(String[] args) {
         Static_Array_Stack_Leet_code a = new Static_Array_Stack_Leet_code(4);
-        System.out.println(a.isValid("[}()"));
+        System.out.println(a.isValid("()()()[]`"));
 
     }   
 
