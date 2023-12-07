@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5358c839-b75b-4f11-801f-38500d2d4d2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab_3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Static_Array_Stack_Leet_code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Static_Array_Stack_Leet_code.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +42,19 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/burn-e-e/Documents/GitHub/Data-Structure-and-Algorithm/DSA/src/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-920bfa72" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,10 +80,17 @@
       <workItem from="1701839728315" duration="300000" />
       <workItem from="1701842388317" duration="302000" />
       <workItem from="1701843036917" duration="1081000" />
+      <workItem from="1701941807680" duration="36000" />
+      <workItem from="1701941848267" duration="402000" />
+      <workItem from="1701942279458" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
