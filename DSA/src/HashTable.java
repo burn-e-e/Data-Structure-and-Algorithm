@@ -11,6 +11,7 @@ public class HashTable {
         return map.get(key);
     }
 
+
     public void put(Object key, Object value) {
         map.put(key, value);
     }

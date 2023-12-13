@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.EmptyStackException;
 import java.util.Scanner;
 import java.util.HashMap;
@@ -5,6 +6,7 @@ import java.util.HashMap;
 public class Main extends Lab3 {
 
     private HashTable hashTable;
+    private static final int INF = Integer.MAX_VALUE;
     public Main() {
         hashTable = new HashTable();
     }
@@ -20,7 +22,7 @@ public class Main extends Lab3 {
         do {
             System.out.println("Menu:");
             System.out.println("1. Lab 1");
-            System.out.println("2. Lab 2");
+            System.out.println("2. Dijkstra's algorithm");
             System.out.println("3. Stack");
             System.out.println("4. Hash Table");
             System.out.println("5. Lab 4");
@@ -31,10 +33,24 @@ public class Main extends Lab3 {
 
             switch (choice) {
                 case 1:
-                    // Implement Lab 1 functionality
+
                     break;
                 case 2:
-                    // Implement Lab 2 functionality
+                    int[][] graph = {
+                            {0, 4, 0, 0, 0, 0, 0, 8, 0},
+                            {4, 0, 8, 0, 0, 0, 0, 11, 0},
+                            {0, 8, 0, 7, 0, 4, 0, 0, 2},
+                            {0, 0, 7, 0, 9, 14, 0, 0, 0},
+                            {0, 0, 0, 9, 0, 10, 0, 0, 0},
+                            {0, 0, 4, 14, 10, 0, 2, 0, 0},
+                            {0, 0, 0, 0, 0, 2, 0, 1, 6},
+                            {8, 11, 0, 0, 0, 0, 1, 0, 7},
+                            {0, 0, 2, 0, 0, 0, 6, 7, 0}
+                    };
+
+                    int startVertex = 0;
+                    dijkstra(graph, startVertex);
+                    runDijkstra();
                     break;
                 case 3:
                     runLab3Menu();
@@ -43,10 +59,10 @@ public class Main extends Lab3 {
                     runHashTableMenu();
                     break;
                 case 5:
-                    // Implement Lab 4 functionality
+
                     break;
                 case 0:
-                    System.out.println("Exiting program. Goodbye!");
+                    System.out.println("Exiting program. Bye!");
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -54,6 +70,57 @@ public class Main extends Lab3 {
         } while (choice != 0);
 
         scanner.close();
+    }
+    public static void dijkstra(int[][] graph, int startVertex) {
+        int numVertices = graph.length;
+        int[] distance = new int[numVertices];
+        boolean[] visited = new boolean[numVertices];
+
+        Arrays.fill(distance, INF);
+        distance[startVertex] = 0;
+
+        for (int i = 0; i < numVertices - 1; i++) {
+            int minDistanceVertex = findMinDistanceVertex(distance, visited);
+            visited[minDistanceVertex] = true;
+
+            for (int j = 0; j < numVertices; j++) {
+                if (!visited[j] && graph[minDistanceVertex][j] != 0 &&
+                        distance[minDistanceVertex] != INF &&
+                        distance[minDistanceVertex] + graph[minDistanceVertex][j] < distance[j]) {
+                    distance[j] = distance[minDistanceVertex] + graph[minDistanceVertex][j];
+                }
+            }
+        }
+
+        printSolution(distance);
+    }
+
+
+    private static int findMinDistanceVertex(int[] distance, boolean[] visited) {
+        int minDistance = INF;
+        int minDistanceVertex = -1;
+
+        for (int v = 0; v < distance.length; v++) {
+            if (!visited[v] && distance[v] <= minDistance) {
+                minDistance = distance[v];
+                minDistanceVertex = v;
+            }
+        }
+
+        return minDistanceVertex;
+    }
+
+    private static void printSolution(int[] distance) {
+        System.out.println("Vertex \t\t Distance from Source Vertex");
+        for (int i = 0; i < distance.length; i++) {
+            System.out.println(i + " \t\t\t " + distance[i]);
+        }
+    }
+    private void runDijkstra() {
+        // Implement Dijkstra's algorithm
+        // You can use the existing Dijkstra's algorithm code here
+        // Make sure to replace the existing implementation with your own
+        System.out.println("Dijkstra's algorithm will be implemented here.");
     }
     private void runHashTableMenu() {
         Scanner sc = new Scanner(System.in);
@@ -122,7 +189,6 @@ public class Main extends Lab3 {
                         System.out.println("Key not found. Cannot delete.");
                     }
                     break;
-
                 case 0:
                     System.out.println("Returning to Main Menu.");
                     break;
