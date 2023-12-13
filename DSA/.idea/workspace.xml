@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5358c839-b75b-4f11-801f-38500d2d4d2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Professions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Assignment/Major.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,7 @@
   "keyToString": {
     "Application.Lab3.executor": "Run",
     "Application.Lab_3.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Major.executor": "Run",
     "Application.Subject.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -96,6 +95,7 @@
       <workItem from="1701951193687" duration="687000" />
       <workItem from="1702262959210" duration="8000" />
       <workItem from="1702437054476" duration="2927000" />
+      <workItem from="1702440296291" duration="1457000" />
     </task>
     <servers />
   </component>
