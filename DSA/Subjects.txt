@@ -1,0 +1,5 @@
+CS101/Introduction to Programming/3.0
+CS102/Data Structures/4.0
+CS103/Computer Architecture/3.0
+CS104/Operating Systems/3.0
+CS105/Software Engineering/3.0
